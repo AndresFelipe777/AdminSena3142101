@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Apprentice extends Model
 {
     use HasFactory;
+
+    public function computer()
+    {
+        return $this->belongsTo(Computer::class);
+    }
 }
